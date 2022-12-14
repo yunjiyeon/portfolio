@@ -1,0 +1,174 @@
+/**** title scroll ****/
+
+@keyframes scrollUpDown {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/**** title cloud ****/
+
+@keyframes cloud1 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0) translateY(-40px);
+  }
+  50% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(-50%, 0, 0) translateY(40px);
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0) translateY(-40px);
+  }
+}
+@keyframes cloud2 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0) translateY(50px);
+  }
+  50% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(-50%, 0, 0) translateY(-20px);
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0) translateY(50px);
+  }
+}
+@keyframes cloud3 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0) translateY(-30px);
+  }
+  50% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(-50%, 0, 0) translateY(30px);
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0) translateY(-30px);
+  }
+}
+@keyframes cloud4 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0) translateY(10px);
+  }
+  50% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(-50%, 0, 0) translateY(-100px);
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0) translateY(10px);
+  }
+}
+
+/**** title mimoticon heart  ****/
+
+@keyframes swing {
+  0% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10px);
+  }
+}
+@keyframes swing768 {
+  0% {
+    transform: translate(-50%) rotate(-10deg);
+  }
+  50% {
+    transform: translate(-50%) rotate(10deg);
+  }
+  100% {
+    transform: translate(-50%) rotate(-10px);
+  }
+}
+@keyframes heart {
+  0% {
+    opacity: 1; 
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+
+/**** about me plane ****/
+
+@keyframes plane1 {
+  0% {
+    transform: translate(0px, 0px) scale(1.2);
+    opacity: 0;
+  }
+  50% {
+    transform:  translate(20px, -10px) scale(1.1);
+    opacity: 0.7;
+  }
+  100% {
+    transform:  translate(30px, -20px) scale(1);
+    opacity: 1;
+  }
+}
+@keyframes plane2 {
+  0% {
+    transform: translate(0px, 0px) scale(1.2) rotate(-10deg);
+    opacity: 0;
+  }
+  50% {
+    transform:  translate(20px, -10px) scale(1.1) rotate(-15deg);
+    opacity: 0.7;
+  }
+  100% {
+    transform:  translate(30px, -20px) scale(1) rotate(-20deg);
+    opacity: 1;
+  }
+}
+@keyframes plane3 {
+  0% {
+    transform: translate(0px, 0px) scale(1.2) rotate(-3deg);
+    opacity: 0;
+  }
+  50% {
+    transform:  translate(20px, -10px) scale(1.1) rotate(5deg);
+    opacity: 0.7;
+  }
+  100% {
+    transform:  translate(30px, -20px) scale(1) rotate(10deg);
+    opacity: 1;
+  }
+}
+
+
+
+/**** contact cloud ****/
+
+@keyframes contactCloud1 {
+  0% {
+    transform: translate(-100%);
+  }
+  100% {
+    transform: translate(5%);
+  }
+}
+@keyframes contactCloud2 {
+  0% {
+    transform: translate(100%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}

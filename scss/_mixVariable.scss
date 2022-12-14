@@ -1,0 +1,39 @@
+$bg-color: #F2F3F5;
+$main-color:  #fff000;
+$gray1: #585858;
+$gray2: #b6b6b6;
+$gray3: rgba(0,0,0,.08);
+$opacityBlack: rgba(0,0,0,.2);
+$opacityBg: rgba(238, 225, 216, 0.45);
+
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  font-family: "Archivo",'Pretendard-Regular',inherit sans-serif;
+}
+
+@mixin title-css {
+  text-align: center;
+  padding: 80px 0 50px 0;
+  font-size: 55px;
+  font-weight: 900;
+  transition: .3s;
+  @media (max-width: 994px) {
+    font-size: 45px;
+  }
+  @media (max-width: 768px) {
+    font-size: 30px;
+  }
+}
+@mixin section-bg {
+  width: 100%;
+  height: 100%;
+  background: $bg-color;
+}
+
