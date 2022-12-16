@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+#subTitle {
+  max-width: 80%;
+  margin: 0 auto;
+  border: 5px solid red;
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-between;
+  .projectTitle{
+    margin-right: 20px;
+    h1 {
+      font-size: 5vw;
+    }
+  }
+  .imgBox {
+    border: 3px solid blue;
+    width: 60%;
+    img {
+      width: 100%;
+    }
+  }
+}

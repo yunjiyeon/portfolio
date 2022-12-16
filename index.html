@@ -11,9 +11,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
 
-  <!-- 이미지 배열 플러그인 -->
-
-
   <!-- javascript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -25,7 +22,7 @@
   <header>
     <div class="Container">
       <div class="headerWrap">
-        <h1><a href="#title">YUN</a></h1>
+        <h1><a href="index.html">YUN</a></h1>
       </div>
       <div class="nav">
         <div class="navBtn">
@@ -115,7 +112,7 @@
     </section> 
   
     <!-- section 2 Skills-->
-    <section id="skills" class="skillsContainer">
+    <!-- <section id="skills" class="skillsContainer">
       <h1>Skills</h1>
       <div class="skillsItemImg">
         <ul>
@@ -123,16 +120,28 @@
             <button class="skillsImg">
               <img src="img/htmlcss.png" alt="">
             </button>
+            <div class="skillsItem">
+              <img src="img/htmlcss.png" alt="">
+              <p>keyframe을 활용한 애니메이션 기법 활용<br>HTML/CSS 를 사용한 반응형 웹 사이트 제작<br></p>
+            </div>
           </li>
           <li>
             <button class="skillsImg">
               <img src="img/sass.png" alt="">
             </button>
+            <div class="skillsItem">
+              <img src="img/sass.png" alt="">
+              <p>sass를 활용한 앱 사이트 제작<br>PWA 적용</p>
+            </div>
           </li>
           <li>
             <button class="skillsImg">
               <img src="img/bootstrap1.png" alt="">
             </button>
+            <div class="skillsItem bootstrapSkills">
+              <img src="img/bootstrap1.png" alt="">
+              <p>bootstrap을 활용한 반응형 웹 사이트 제작<br>페스티벌 홍보 사이트 제작 경험<br></p>
+            </div>
           </li>
           <li>
             <button class="skillsImg">
@@ -144,11 +153,18 @@
               <img src="img/react.png" alt="">
             </button>
             <div class="skillsItem">
+              <img src="img/react.png" alt="">
+              <p>컴포넌트 기반 SPA 개발 경험<br>Router, Redux 라이브 러리 사용 경험</p>
+            </div>
           </li>
           <li>
             <button class="skillsImg">
               <img src="img/js.png" alt="">
             </button>
+            <div class="skillsItem">
+              <img src="img/js.png" alt="">
+              <p>bootstrap을 활용한 반응형 웹 사이트 제작<br>Router, Redux 라이브 러리 사용 경험</p>
+            </div>
           </li>
           <li>
             <button class="skillsImg">
@@ -161,16 +177,107 @@
             </button>
           </li>
         </ul>
-      <div> 
+      </div> 
       <div class="skillsDetail">
         <h2>Skills Detail</h2>
         <div class="skillsBox">
+          <div class="skillsItem">
+            <img src="img/js1.png" alt="">
+            <p>ES6+ 문법<br>웹/앱 사이트 제작 경험<br></p>
+          </div>
+        </div>
+      </div> 
+    </section> -->
+
+
+    <section id="skills">
+      <h1>Skills</h1>
+      <div id="wrapper">
+        <div class="content">
+          <!-- Tab links -->
+          <div class="tabs">
+              <button class="tablinks active" data-skills="Language"><p data-title="Language">📕 Language</p></button>
+              <button class="tablinks" data-skills="Framework"><p data-title="Framework Library">📗 Framework / Library</p></button>
+              <button class="tablinks" data-skills="MarkUp"><p data-title="MarkUp">📘 MarkUp</p></button>
+              <button class="tablinks" data-skills="Tool"><p data-title="Tool">📙 Tool</p></button>
+          </div>
   
+          <!-- Tab content -->
+          <div class="wrapper_tabcontent">
+            <div id="Language" class="tabcontent active">
+              <ul>
+                <li>
+                  <h3><img src="img/bootstrap1.png" alt=""> <span>Bootstrap</span></h3>
+                  <p>Madrid is in the middle of Spain, in the Community of Madrid. The Community is a large area that includes the city as well as small towns and villages outside the city. 7 million people live in the Community. More than 3 million live in the city itself. 
+                </li>
+              </ul>
+            </div>
+              <div id="Framework" class="tabcontent">
+                <ul>
+                  <li>
+                    <h3><img src="img/bootstrap1.png" alt=""> <span>Bootstrap</span></h3>
+                    <p>Madrid is in the middle of Spain, in the Community of Madrid. The Community is a large area that includes the city as well as small towns and villages outside the city. 7 million people live in the Community. More than 3 million live in the city itself. 
+                  </li>
+                  <li>
+                    <h3><img src="img/bootstrap1.png" alt=""> <span>Bootstrap</span></h3>
+                    <p>Madrid is in the middle of Spain, in the Community of Madrid. The Community is a large area that includes the city as well as small towns and villages outside the city. 7 million people live in the Community. More than 3 million live in the city itself. 
+                  </li>
+                  <li>
+                    <h3><img src="img/bootstrap1.png" alt=""> <span>Bootstrap</span></h3>
+                    <p>Madrid is in the middle of Spain, in the Community of Madrid. The Community is a large area that includes the city as well as small towns and villages outside the city. 7 million people live in the Community. More than 3 million live in the city itself. 
+                  </li>
+                  <li>
+                    <h3><img src="img/bootstrap1.png" alt=""> <span>Bootstrap</span></h3>
+                    <p>Madrid is in the middle of Spain, in the Community of Madrid. The Community is a large area that includes the city as well as small towns and villages outside the city. 7 million people live in the Community. More than 3 million live in the city itself. 
+                  </li>
+                  <li>
+                    <h3><img src="img/bootstrap1.png" alt=""> <span>Bootstrap</span></h3>
+                    <p>Madrid is in the middle of Spain, in the Community of Madrid. The Community is a large area that includes the city as well as small towns and villages outside the city. 7 million people live in the Community. More than 3 million live in the city itself. 
+                  </li>
+                </ul>
+              </div>
+  
+              <div id="MarkUp" class="tabcontent">
+                <ul>
+                  <li>
+                    <h3><img src="img/bootstrap1.png" alt=""> <span>Bootstrap</span></h3>
+                    <p>Madrid is in the middle of Spain, in the Community of Madrid. The Community is a large area that includes the city as well as small towns and villages outside the city. 7 million people live in the Community. More than 3 million live in the city itself. 
+                  </li>
+                  <li>
+                    <h3><img src="img/bootstrap1.png" alt=""> <span>Bootstrap</span></h3>
+                    <p>Madrid is in the middle of Spain, in the Community of Madrid. The Community is a large area that includes the city as well as small towns and villages outside the city. 7 million people live in the Community. More than 3 million live in the city itself. 
+                  </li>
+                  <li>
+                    <h3><img src="img/bootstrap1.png" alt=""> <span>Bootstrap</span></h3>
+                    <p>Madrid is in the middle of Spain, in the Community of Madrid. The Community is a large area that includes the city as well as small towns and villages outside the city. 7 million people live in the Community. More than 3 million live in the city itself. 
+                  </li>
+                </ul>
+
+              </div>
+              <div id="Tool" class="tabcontent">
+                <ul>
+                  <li>
+                    <h3><img src="img/bootstrap1.png" alt=""> <span>Bootstrap</span></h3>
+                    <p>Madrid is in the middle of Spain, in the Community of Madrid. The Community is a large area that includes the city as well as small towns and villages outside the city. 7 million people live in the Community. More than 3 million live in the city itself. 
+                  </li>
+                  <li>
+                    <h3><img src="img/bootstrap1.png" alt=""> <span>Bootstrap</span></h3>
+                    <p>Madrid is in the middle of Spain, in the Community of Madrid. The Community is a large area that includes the city as well as small towns and villages outside the city. 7 million people live in the Community. More than 3 million live in the city itself. 
+                  </li>
+                  <li>
+                    <h3><img src="img/bootstrap1.png" alt=""> <span>Bootstrap</span></h3>
+                    <p>Madrid is in the middle of Spain, in the Community of Madrid. The Community is a large area that includes the city as well as small towns and villages outside the city. 7 million people live in the Community. More than 3 million live in the city itself. 
+                  </li>
+                </ul>
+              </div>
+          </div>
         </div>
       </div>
     </section>
-  
-  
+
+
+
+
     <!-- section 3 project -->
     <section id="project" class="projectContainer">
       <h1>Project</h1>
@@ -187,11 +294,13 @@
       <div class="projectItem">
         <article class="web mobile responsive">
           <div class="imgBox">
-            <img src="img/portfoilo.png" alt="" />
-            <div class="detail">
-              <h2 class="title">Protfolio<br><strong>Hello! I'm Jiyeon.</strong></h2>
-              <p class="type">Web / Mobile / Tablet</p>
-            </div>
+            <a href="portfolio.html">
+              <img src="img/portfoilo.png" alt="" />
+              <div class="detail">
+                <h2 class="title">Protfolio<br><strong>Hello! I'm Jiyeon.</strong></h2>
+                <p class="type">Web / Mobile / Tablet</p>
+              </div>
+            </a>
           </div>
         </article>
         <article class="mobile responsive">

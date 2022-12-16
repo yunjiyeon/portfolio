@@ -9,25 +9,6 @@ $('.navContainer').click(function(){
 });
 
 
-var toggle = {
-  click: function (target) {
-    var $target = $(target);
-    $target.on("click", function () {
-      if ($(this).hasClass("on")) {
-        slideUp($target);
-      } else {
-        slideUp($target);
-        $(this).addClass("on").next().slideDown(400);
-      }
-
-      function slideUp($target) {
-        $target.removeClass("on").next().slideUp(400);
-      }
-    });
-  },
-};
-toggle.click(".skillsImg");
-
 
 
 /* 이미지 플러그인 / 프로젝트 */
@@ -63,3 +44,34 @@ window.addEventListener("load", () => {
 });
 
 
+
+
+
+
+// tabs
+
+let tabLinks = document.querySelectorAll(".tablinks");
+let tabContent = document.querySelectorAll(".tabcontent");
+
+
+tabLinks.forEach(function(el) {
+   el.addEventListener("click", openTabs);
+});
+
+
+function openTabs(el) {
+   let btnTarget = el.currentTarget;
+   let skills = btnTarget.dataset.skills;
+
+   tabContent.forEach(function(el) {
+      el.classList.remove("active");
+   });
+
+   tabLinks.forEach(function(el) {
+      el.classList.remove("active");
+   });
+
+   document.querySelector("#" + skills).classList.add("active");
+   
+   btnTarget.classList.add("active");
+}
