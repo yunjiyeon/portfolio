@@ -871,8 +871,6 @@ main {
 .tablinks.active p,
 .tablinks.active:hover p {
   opacity: 1;
-  background: linear-gradient(135deg, #fff892 0%, #fff000 100%);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: #000000;
 }
 
@@ -887,7 +885,7 @@ main {
   color: #000000;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 /* Tabs text bigger */
@@ -980,6 +978,7 @@ main {
   width: 25px;
   height: 25px;
   vertical-align: bottom;
+  border-radius: 4px;
 }
 .tabcontent h3 span {
   margin-left: 10px;
