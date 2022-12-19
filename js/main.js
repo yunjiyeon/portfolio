@@ -8,6 +8,15 @@ $('.navContainer').click(function(){
   $(this).slideUp(400);
 });
 
+$('.subNavBtn').click(function(){
+  $(this).toggleClass('active');
+  $('.subNavContainer').slideToggle(400);
+});
+
+$('.subNavContainer').click(function(){
+  $('.subNavBtn').removeClass('active');
+  $(this).slideUp(400);
+});
 
 
 

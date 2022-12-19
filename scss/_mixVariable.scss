@@ -14,8 +14,26 @@ $opacityBg: rgba(238, 225, 216, 0.45);
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Pretendard-bold';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-bold.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-black';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-black.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body{
+    cursor: url(../img/mouse.png) 2 2, auto;
+}
 * {
-  font-family: "Archivo",'Pretendard-Regular',inherit sans-serif;
+  font-family: "Archivo",'Pretendard-bold',inherit sans-serif;
 }
 
 @mixin title-css {
