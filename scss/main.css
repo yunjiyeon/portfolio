@@ -297,9 +297,6 @@ main {
 #title .titleContainer .titleWrap p span {
   transition: 0.3s;
 }
-#title .titleContainer .titleWrap .mainText {
-  text-align: start;
-}
 #title .titleContainer .titleWrap .subText {
   font-size: 18px;
   font-weight: 600;
