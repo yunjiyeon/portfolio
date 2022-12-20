@@ -1561,9 +1561,6 @@ main {
 #footer .sns span:hover {
   background: #fff000;
 }
-#footer .sns:hover p {
-  background: #fff000;
-}
 @media (max-width: 768px) {
   #footer {
     padding: 0 20px;

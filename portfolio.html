@@ -11,11 +11,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
 
-   <!-- swiper -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
- 
-   <link rel="stylesheet" href="scss/sub.css">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <link rel="stylesheet" href="scss/sub.css">
 
   <!-- javascript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -91,92 +91,62 @@
       <div class="subText">
         <div class="subWrap subInner">
           <h3>Overview</h3>
-          <p>기존의 문화 공연 플랫폼 &lt;매표소&gt;의 단점들을 보완하여 사용자가 더욱 편하게 서비스를 이용할 수 있도록 리디자인하여 개발하였습니다.<br>이미지는 <strong>Swiper API, Isotope Plugin</strong>를 적용하여 보다 액티비티한 효과를 구현하고자 하였습니다.<br>애플리케이션을 설치하지 않더라도 사용자의 웹 사이트 방문이 용이하도록 <strong>PWA 웹 앱 사이트를 구축</strong>하였습니다.</p>
+          <p>백그라운드에 구름 이미지를 위치 시켰고, 애니메이션 효과를 주어 떠다니는 구름처럼 보이도록 구현하였습니다.<br>크게 About, Skills, Project, Contact 네 가지로 섹션을 나누어 마크업 하였습니다.<br>Project는 최근 개발한 홈페이지를 우선적으로 배열하였고, Isotope 플러그인을 활용하여 Project 필터링시 동적인 효과를 주었습니다.</p>
         </div>
       </div>
-      <div class="subText">
-        <div class="pro1subWrap subInner">
-          <h3>Report</h3>
-          <a class="reportDown" href="file/매표소 보고서.pdf" download="">Download (Link)</a>
-          <div id="reportWrap" class="swiper-container">
-            <ul class="swiper-wrapper">
-              <li class="swiper-slide">
-                <img src="img/report1.png" alt="">
-              </li> 
-              <li class="swiper-slide">
-                <img src="img/report2.png" alt="">
-              </li>
-              <li class="swiper-slide">
-                <img src="img/report3.png" alt="">
-              </li>
-              <li class="swiper-slide">
-                <img src="img/report4.png" alt="">
-              </li>
-              <li class="swiper-slide">
-                <img src="img/report5.png" alt="">
-              </li>
-              <li class="swiper-slide">
-                <img src="img/report6.png" alt="">
-              </li>
-              <li class="swiper-slide">
-                <img src="img/report7.png" alt="">
-              </li>
-              <li class="swiper-slide">
-                <img src="img/report8.png" alt="">
-              </li>
-              <li class="swiper-slide">
-                <img src="img/report9.png" alt="">
-              </li>
-              <li class="swiper-slide">
-                <img src="img/report10.png" alt="">
-              </li>
-            </ul>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+      <div class="subText portContainer subInner">
+        <h3>Wire Frame</h3>
+        <div class="port">
+          <div class="portPc pro1subWrap">
+            <p>PC</p>
+            <div class="imac">
+              <img class="imacImg" src="img/macbook.png" alt="">
+              <div id="portPcWrap" class="swiper-container">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <img src="img/port1.png" alt="">
+                  </li> 
+                  <li class="swiper-slide">
+                    <img src="img/port2.png" alt="">
+                  </li>
+                  <li class="swiper-slide">
+                    <img src="img/port3.png" alt="">
+                  </li>
+                  <li class="swiper-slide">
+                    <img src="img/port4.png" alt="">
+                  </li>
+                  <li class="swiper-slide">
+                    <img src="img/port5.png" alt="">
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="subText">
-        <div class="pro1subWrap subInner">
-          <h3>Wire Frame</h3>
-          <div id="wireframeWrap" class="swiper-container">
-            <ul class="swiper-wrapper">
-              <li class="swiper-slide">
-                <img src="img/tkt_wireframe1.png" alt="">
-              </li> 
-              <li class="swiper-slide">
-                <img src="img/tkt_wireframe2.png" alt="">
-              </li>
-              <li class="swiper-slide">
-                <img src="img/tkt_wireframe3.png" alt="">
-              </li>
-              <li class="swiper-slide">
-                <img src="img/tkt_wireframe4.png" alt="">
-              </li>
-              <li class="swiper-slide">
-                <img src="img/tkt_wireframe5.png" alt="">
-              </li>
-              <li class="swiper-slide">
-                <img src="img/tkt_wireframe6.png" alt="">
-              </li>
-              <li class="swiper-slide">
-                <img src="img/tkt_wireframe7.png" alt="">
-              </li>
-              <li class="swiper-slide">
-                <img src="img/tkt_wireframe8.png" alt="">
-              </li>
-            </ul>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+          <div class="portM pro1subWrap">
+            <p>Mobile</p>
+            <div class="iphone">
+              <img class="imacImg" src="img/iphone2.png" alt="">
+              <div id="portMWrap" class="swiper-container">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <img src="img/m-port1.png" alt="">
+                  </li> 
+                  <li class="swiper-slide">
+                    <img src="img/m-port2.png" alt="">
+                  </li>
+                  <li class="swiper-slide">
+                    <img src="img/m-port3.png" alt="">
+                  </li>
+                  <li class="swiper-slide">
+                    <img src="img/m-port4.png" alt="">
+                  </li>
+                  <li class="swiper-slide">
+                    <img src="img/m-port5.png" alt="">
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="prototype">
-        <div class="subWrap subInner">
-          <h3>Disital prototype</h3>
-          <a href="https://www.figma.com/proto/DC422UKo7dkzTecgcffLz1/Untitled?node-id=25%3A3537&scaling=min-zoom&page-id=25%3A2444&starting-point-node-id=25%3A2601" target="_blank"><span>Figma (Link)</span></a>
         </div>
       </div>
     </section>
@@ -198,7 +168,6 @@
       <div class="sns">
         <p>CONTACT.</p>
         <span><img src="img/message.png" alt=""></span>
-        <span><img src="img/insta.png" alt=""></span>
       </div>
     </div>
   </footer>

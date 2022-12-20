@@ -126,6 +126,42 @@ let reportSlide = {
 const rSlide = new Swiper("#reportWrap", reportSlide);
 
 
+/* portfolio pc report slide */
+
+let portPcSlide = {
+    direction: 'vertical',
+    slidesPerView: 1,
+    spaceBetween: 0,
+    mousewheel: true,
+    grabCursor: true,
+    loop: true,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+};
+const pSlide = new Swiper("#portPcWrap", portPcSlide);
+
+
+/* portfolio moblie report slide */
+
+let portMSlide = {
+  direction: 'vertical',
+  slidesPerView: 1,
+  spaceBetween: 0,
+  mousewheel: true,
+  grabCursor: true,
+  loop: true,
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
+};
+const pMSlide = new Swiper("#portMWrap", portMSlide);
+
+
+
+
 
 /* topBtn */
 

@@ -19,36 +19,6 @@
       font-size: 12px;
     }
   }
-  #wireframeWrap {
-    margin: 0 auto;
-    max-width: 1000px;
-    overflow: hidden;
-    ul {
-      display: flex;
-      li {
-        width: 100%;
-        height: 100%;
-        img {
-          width: 100%;
-        }
-      }
-    }
-  }
-  #reportWrap {
-    margin: 20px auto 0 auto;
-    max-width: 1000px;
-    overflow: hidden;
-    ul {
-      display: flex;
-      li {
-        width: 100%;
-        height: 100%;
-        img {
-          width: 100%;
-        }
-      }
-    }
-  }
   @media (max-width: 768px) {
     padding: 50px 0;
     h3 {
@@ -115,4 +85,192 @@
 
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
   bottom: 5%;
+}
+
+
+
+#wireframeWrap {
+  margin: 0 auto;
+  max-width: 1000px;
+  overflow: hidden;
+  ul {
+    display: flex;
+    li {
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+#reportWrap {
+  margin: 20px auto 0 auto;
+  max-width: 1000px;
+  overflow: hidden;
+  ul {
+    display: flex;
+    li {
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+/* fortfolio */ 
+
+.port {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.portContainer {
+  h3 {
+    padding-top: 100px;
+    text-align: center;
+    font: {
+      size: 30px;
+      weight: 900;
+    }
+    @media (max-width: 768px) {
+      padding-top: 30px;
+      font-size: 16px;
+    }
+  }
+}
+.portPc {
+  padding: 100px 0;
+  @media (max-width: 768px) {
+    padding: 20px 0 50px 0;
+  }
+  p {
+    text-align: start;
+    margin: 20px 0 50px 0;
+    font-weight: 600;
+    @media (max-width: 768px) {
+      font-size: 13px;
+    }
+  }
+  .imac {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+  
+    img {
+      width: 100%;
+    }
+  }
+}
+
+#portPcWrap {
+  margin: 20px auto 0 auto;
+  width: 68%;
+  height: 550px;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  left: 50%;
+  transform: translate(-50%);
+  overflow: hidden;
+  @media (max-width: 994px) {
+    height: 470px;
+  }
+  @media (max-width: 774px) {
+    margin: 5px auto 0 auto;
+    height: 290px;
+  }
+  ul {
+    display: flex;
+    li {
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.portM {
+  padding: 100px 0;
+  @media (max-width: 768px) {
+    padding: 20px 0 50px 0;
+  }
+  p {
+    text-align: start;
+    margin: 20px 0 50px 0;
+    font-weight: 600;
+    @media (max-width: 768px) {
+      font-size: 13px;
+    }
+  }
+  .iphone {
+    position: relative;
+    max-width: 200px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    img {
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+}
+
+#portMWrap {
+  margin: 10px auto 50px auto;
+  width: 90%;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  left: 50%;
+  transform: translate(-50%);
+  overflow: hidden;
+  @media (max-width: 774px) {
+    margin: 5px auto 0 auto;
+  }
+  ul {
+    display: flex;
+    li {
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+/* davich */
+
+.davichframe {
+  ul {
+    display: flex;
+    justify-content: center;
+    li {
+      margin-right: 30px;
+      p {
+        margin: 20px 0;
+        font-weight: 600;
+        @media (max-width: 768px) {
+          font-size: 13px;
+        }
+      }
+      img{
+        width: 100%;
+      }
+      &:nth-child(3) {
+        margin-right: 0;
+      }
+    }
+  }
 }
