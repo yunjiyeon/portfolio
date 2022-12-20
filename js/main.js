@@ -84,3 +84,67 @@ function openTabs(el) {
    
    btnTarget.classList.add("active");
 }
+
+
+/* tktoffice wireframe slide */
+
+let wireframeSlide = {
+  slidesPerView: 3.5,
+  spaceBetween: 20,
+  loop: false,
+  pagination: {
+    el: ".swiper-pagination"
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  mousewheel : true,
+};
+const wSlide = new Swiper("#wireframeWrap", wireframeSlide);
+
+/* tktoffice report slide */
+
+let reportSlide = {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  autoplay : {
+    //시간 1000 이 1초
+    delay : 3500,
+    disableOnInteraction : false,
+},
+  pagination: {
+    el: ".swiper-pagination"
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  mousewheel : true,
+};
+const rSlide = new Swiper("#reportWrap", reportSlide);
+
+
+
+/* topBtn */
+
+$(function () {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 300) {
+      $(".topBtn").addClass("topBtnActive").css("opacity", "0.85");
+    } else {
+      $(".topBtn").removeClass("topBtnActive").css("opacity", "0");
+    }
+  });
+});
+
+$(".topBtn").click(function () {
+  $("html, body").animate(
+    {
+      scrollTop: 0,
+    },
+    400,
+  );
+  return false;
+});

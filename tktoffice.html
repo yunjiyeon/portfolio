@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YUN : PROJECT</title>
+  <link rel="stylesheet" href="scss/main.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <link rel="stylesheet" href="scss/sub.css">
+  <!-- javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+<body class="subDetail">
+  <!-- header -->
+  <header>
+    <div class="subHeaderContainer">
+      <div class="headerWrap">
+        <h1><a href="index.html">YUN</a></h1>
+      </div>
+      <div class="subNav">
+        <div class="subNavBtn">
+          <span class="btnLine1"></span>
+          <span class="btnLine2"></span>
+          <span class="btnLine3"></span>
+        </div>
+        <nav class="subNavContainer">
+          <div><a href="index.html#aboutMe"><span>ABOUT</span></a></div>
+          <div><a href="index.html#skills"><span>SKILLS</span></a></div>
+          <div><a href="index.html#project"><span>PROJECT</span></a></div>
+          <div><a href="#contact"><span>CONTACT</span></a></div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <a href="index.html#project"class="back"> 👈 Back to the Project</a>
+    <section id="subTitle" class="subTitleInner">
+      <div class="subContainer">
+        <div class="projectTitle">
+          <h1>매표소</h1>
+          <div class="viewWrap">
+            <a href="https://github.com/yunjiyeon/tktoffice" target="_blank">View Code</a>
+            <a href="https://yunjiyeon.github.io/tktoffice/" target="_blank">Demo</a>
+          </div>
+        </div>
+        <div class="projectDetail">
+          <p><strong>문화 공연 예매 플랫폼 웹/앱 사이트 개발 (PWA)</strong><br>Scss, Javascript, jQuery를 중점으로 애니메이션을 활용하여 조금 더 동적인 효과를 구현하여 사이트를 개발하였습니다.</p>
+          <div class="projectSkills">
+            <ul>
+              <li>
+                <p>기여도</p>
+                <span>개인 100%</span>
+              </li>
+              <li>
+                <p>기간</p>
+                <span>2022.11</span>
+              </li>
+              <li class="useSkills">
+                <p>기술 스택</p>
+                <span>Html</span>
+                <span>Scss</span>
+                <span>Javascript</span>
+                <span>jQuery</span>
+                <span>Figma</span>
+                <span>adobe</span>
+                <span>PWA</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section id="subProjectDetail">
+      <div class="imgBox subInner">
+        <img src="img/project2-3.png" alt="" />
+      </div>
+      <div class="subText">
+        <div class="subWrap subInner">
+          <h3>Overview</h3>
+          <p>기존의 문화 공연 플랫폼 &lt;매표소&gt;의 단점들을 보완하여 사용자가 더욱 편하게 서비스를 이용할 수 있도록 리디자인하여 개발하였습니다.<br>이미지는 <strong>Swiper API, Isotope Plugin</strong>를 적용하여 보다 액티비티한 효과를 구현하고자 하였습니다.<br>애플리케이션을 설치하지 않더라도 사용자의 웹 사이트 방문이 용이하도록 <strong>PWA 웹 앱 사이트를 구축</strong>하였습니다.</p>
+        </div>
+      </div>
+      <div class="subText">
+        <div class="pro1subWrap subInner">
+          <h3>Report</h3>
+          <a class="reportDown" href="file/매표소 보고서.pdf" download="">Download (Link)</a>
+          <div id="reportWrap" class="swiper-container">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <img src="img/report1.png" alt="">
+              </li> 
+              <li class="swiper-slide">
+                <img src="img/report2.png" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="img/report3.png" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="img/report4.png" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="img/report5.png" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="img/report6.png" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="img/report7.png" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="img/report8.png" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="img/report9.png" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="img/report10.png" alt="">
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+      <div class="subText">
+        <div class="pro1subWrap subInner">
+          <h3>Wire Frame</h3>
+          <div id="wireframeWrap" class="swiper-container">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <img src="img/tkt_wireframe1.png" alt="">
+              </li> 
+              <li class="swiper-slide">
+                <img src="img/tkt_wireframe2.png" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="img/tkt_wireframe3.png" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="img/tkt_wireframe4.png" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="img/tkt_wireframe5.png" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="img/tkt_wireframe6.png" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="img/tkt_wireframe7.png" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="img/tkt_wireframe8.png" alt="">
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+      <div class="prototype">
+        <div class="subWrap subInner">
+          <h3>Disital prototype</h3>
+          <a href="https://www.figma.com/proto/DC422UKo7dkzTecgcffLz1/Untitled?node-id=25%3A3537&scaling=min-zoom&page-id=25%3A2444&starting-point-node-id=25%3A2601" target="_blank"><span>Figma (Link)</span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+    <!-- topBtn-->
+    <button class="topBtn">
+      <img src="img/topBtn.png" alt="">
+    </button>
+    
+  <footer id="footer">
+    <div class="footerContainer">
+      <div class="footerlogo">
+        <h1>YUN JI YEON</h1>
+        <p>ⓒ Copyright 2022</p>
+      </div>
+      <div class="sns">
+        <p>CONTACT.</p>
+        <span><img src="img/message.png" alt=""></span>
+        <span><img src="img/insta.png" alt=""></span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,118 @@
+.pro1subWrap {
+  padding: 100px 0;
+  text-align: center;
+  h3 {
+    margin-bottom: 30px;
+    text-align: center;
+    font: {
+      size: 30px;
+      weight: 900;
+    }
+  }
+  .reportDown {
+    transition: .2s;
+    &:hover {
+      background: $main-color;
+      font-weight: 700;
+    }
+    @media (max-width:768px) {
+      font-size: 12px;
+    }
+  }
+  #wireframeWrap {
+    margin: 0 auto;
+    max-width: 1000px;
+    overflow: hidden;
+    ul {
+      display: flex;
+      li {
+        width: 100%;
+        height: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  #reportWrap {
+    margin: 20px auto 0 auto;
+    max-width: 1000px;
+    overflow: hidden;
+    ul {
+      display: flex;
+      li {
+        width: 100%;
+        height: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    padding: 50px 0;
+    h3 {
+      font-size: 16px;
+    }
+  }
+}
+#subProjectDetail {
+  .prototype {
+    background: $bg-color;
+    height: 300px;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .subWrap {
+      text-align: center;
+      h3{
+        width: 100%;
+        font-size: 30px;
+        font-weight: 900;
+      }
+      a {
+        display: block;
+        padding-top: 20px;
+        span {
+          transition: .2s;
+          &:hover{
+            background: $main-color;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      height: 200px;
+      .subWrap{
+        h3 {
+          font-size: 16px;
+          width: 100%;
+        }
+        a{
+          span {
+            line-height: 18px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #222222;
+  @media (max-width: 1400px) {
+    display: none;
+  }
+}
+
+.swiper-pagination {
+  --swiper-theme-color: #222222;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 5%;
+}

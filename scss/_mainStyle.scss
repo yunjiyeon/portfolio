@@ -42,6 +42,8 @@ header {
   transition: .25s;
   margin: 12.5px;
   z-index: 200;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+
   cursor: pointer;
   span {
     display: block;
@@ -106,7 +108,7 @@ header {
   height: 400px;
   padding-top: 80px;
   border-radius: 50px;
-  background: rgba(255,255,255, .7);
+  background: rgba(255,255,255, .8);
   z-index: 100;
   font: {
     size: 12px;
@@ -1394,8 +1396,7 @@ main {
       height: 50px;
       border-radius: 50px;
       padding: 10px;
-      border: 2px solid  $main-color;
-      margin-left: 10px;
+      margin-left: 2px;
       cursor: pointer;
       transition: .3s;
       img {
@@ -1432,5 +1433,34 @@ main {
       }
     }
   }
+}
+
+
+
+
+.topBtn {
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+  z-index: 100;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: $main-color;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  transition: 0.4s;
+  opacity: 0;
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.topBtnActive {
+  bottom: 120px;
+  transition: 0.4s;
+  opacity: 0;
 }
 

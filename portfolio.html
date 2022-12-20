@@ -6,11 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>YUN : PROJECT</title>
   <link rel="stylesheet" href="scss/main.css">
-  <link rel="stylesheet" href="scss/sub.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+   <!-- swiper -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+ 
+   <link rel="stylesheet" href="scss/sub.css">
 
   <!-- javascript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -71,7 +76,7 @@
                 <span>Javascript</span>
                 <span>jQuery</span>
                 <span>Figma</span>
-                <span>adobe</span>
+                <span>adobe Photoshop</span>
               </li>
             </ul>
           </div>
@@ -79,26 +84,111 @@
       </div>
     </section>
   
-    <section id="subProjectDetail" class="">
+    <section id="subProjectDetail">
       <div class="imgBox subInner">
         <img src="img/portfoilo.png" alt="" />
       </div>
       <div class="subText">
         <div class="subWrap subInner">
-          <h3>소개</h3>
-          <p>LMadrid is in the middle of Spain, in the Community of Madrid. The Community is a large area that includes the city as well as small towns and villages outside the city. 7 million people live in the Community. More than 3 million live in the city itself.</p>
+          <h3>Overview</h3>
+          <p>기존의 문화 공연 플랫폼 &lt;매표소&gt;의 단점들을 보완하여 사용자가 더욱 편하게 서비스를 이용할 수 있도록 리디자인하여 개발하였습니다.<br>이미지는 <strong>Swiper API, Isotope Plugin</strong>를 적용하여 보다 액티비티한 효과를 구현하고자 하였습니다.<br>애플리케이션을 설치하지 않더라도 사용자의 웹 사이트 방문이 용이하도록 <strong>PWA 웹 앱 사이트를 구축</strong>하였습니다.</p>
         </div>
       </div>
       <div class="subText">
+        <div class="pro1subWrap subInner">
+          <h3>Report</h3>
+          <a class="reportDown" href="file/매표소 보고서.pdf" download="">Download (Link)</a>
+          <div id="reportWrap" class="swiper-container">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <img src="img/report1.png" alt="">
+              </li> 
+              <li class="swiper-slide">
+                <img src="img/report2.png" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="img/report3.png" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="img/report4.png" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="img/report5.png" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="img/report6.png" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="img/report7.png" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="img/report8.png" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="img/report9.png" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="img/report10.png" alt="">
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+      <div class="subText">
+        <div class="pro1subWrap subInner">
+          <h3>Wire Frame</h3>
+          <div id="wireframeWrap" class="swiper-container">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <img src="img/tkt_wireframe1.png" alt="">
+              </li> 
+              <li class="swiper-slide">
+                <img src="img/tkt_wireframe2.png" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="img/tkt_wireframe3.png" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="img/tkt_wireframe4.png" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="img/tkt_wireframe5.png" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="img/tkt_wireframe6.png" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="img/tkt_wireframe7.png" alt="">
+              </li>
+              <li class="swiper-slide">
+                <img src="img/tkt_wireframe8.png" alt="">
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+      <div class="prototype">
         <div class="subWrap subInner">
-          <h3>기술</h3>
-          <p>LMadrid is in the middle of Spain, in the Community of Madrid. The Community is a large area that includes the city as well as small towns and villages outside the city. 7 million people live in the Community. More than 3 million live in the city itself.</p>
+          <h3>Disital prototype</h3>
+          <a href="https://www.figma.com/proto/DC422UKo7dkzTecgcffLz1/Untitled?node-id=25%3A3537&scaling=min-zoom&page-id=25%3A2444&starting-point-node-id=25%3A2601" target="_blank"><span>Figma (Link)</span></a>
         </div>
       </div>
     </section>
 
+
   </main>
 
+    <!-- topBtn-->
+    <button class="topBtn">
+      <img src="img/topBtn.png" alt="">
+    </button>
+    
   <footer id="footer">
     <div class="footerContainer">
       <div class="footerlogo">

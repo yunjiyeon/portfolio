@@ -1,5 +1,11 @@
 @charset "UTF-8";
 @font-face {
+  font-family: "Pretendard-Light";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
   font-family: "Pretendard-Regular";
   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
   font-weight: 400;
@@ -92,6 +98,7 @@ header .Container h1 {
   transition: 0.25s;
   margin: 12.5px;
   z-index: 200;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 .navBtn span {
@@ -162,7 +169,7 @@ header .Container h1 {
   height: 400px;
   padding-top: 80px;
   border-radius: 50px;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.8);
   z-index: 100;
   font-size: 12px;
   font-weight: 700;
@@ -1544,8 +1551,7 @@ main {
   height: 50px;
   border-radius: 50px;
   padding: 10px;
-  border: 2px solid #fff000;
-  margin-left: 10px;
+  margin-left: 2px;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -1578,65 +1584,30 @@ main {
   }
 }
 
-.pro1subWrap {
-  padding: 100px 0;
+.topBtn {
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+  z-index: 100;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #fff000;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  transition: 0.4s;
+  opacity: 0;
 }
-.pro1subWrap h3 {
-  margin-bottom: 30px;
-  font-size: 30px;
-  font-weight: 700;
-}
-.pro1subWrap img {
-  width: 100%;
-}
-@media (max-width: 768px) {
-  .pro1subWrap {
-    padding: 50px 0;
-  }
-  .pro1subWrap h3 {
-    font-size: 16px;
-    width: 120px;
-  }
+.topBtn img {
+  width: 20px;
+  height: 20px;
 }
 
-.prototype {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 300px;
-  line-height: 20px;
-}
-.prototype .subWrap {
-  text-align: center;
-}
-.prototype .subWrap h3 {
-  font-size: 30px;
-  font-weight: 700;
-}
-.prototype .subWrap a {
-  display: block;
-  padding-top: 20px;
-}
-.prototype .subWrap a span {
-  font-size: 18px;
-  transition: 0.3s;
-}
-.prototype .subWrap a span:hover {
-  background: #fff000;
-  font-weight: 900;
-}
-@media (max-width: 768px) {
-  .prototype {
-    height: 200px;
-  }
-  .prototype .subWrap h3 {
-    font-size: 16px;
-    width: 100%;
-  }
-  .prototype .subWrap a span {
-    line-height: 18px;
-    font-size: 12px;
-  }
+.topBtnActive {
+  bottom: 120px;
+  transition: 0.4s;
+  opacity: 0;
 }
 
 /**** title scroll ****/

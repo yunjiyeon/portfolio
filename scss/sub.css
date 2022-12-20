@@ -1,5 +1,11 @@
 @charset "UTF-8";
 @font-face {
+  font-family: "Pretendard-Light";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
   font-family: "Pretendard-Regular";
   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
   font-weight: 400;
@@ -312,6 +318,7 @@ img {
   letter-spacing: 1px;
 }
 .subContainer .projectDetail strong {
+  font-family: "Pretendard-bold";
   font-size: 18px;
 }
 @media (max-width: 994px) {
@@ -325,6 +332,7 @@ img {
   }
 }
 .subContainer .projectDetail p {
+  font-family: "Pretendard-Regular";
   line-height: 25px;
 }
 @media (max-width: 994px) {
@@ -346,6 +354,7 @@ img {
   }
 }
 .subContainer .projectDetail .projectSkills ul {
+  font-family: "Pretendard-Regular";
   width: 80%;
   display: flex;
   justify-content: space-between;
@@ -384,6 +393,7 @@ img {
   font-weight: 800;
 }
 .subContainer .projectDetail .projectSkills ul li span {
+  font-family: "Pretendard-Regular";
   display: block;
 }
 
@@ -401,16 +411,21 @@ img {
 #subProjectDetail .subText .subWrap h3 {
   width: 200px;
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 900;
 }
 #subProjectDetail .subText .subWrap .subTextDetail {
   width: 80%;
 }
 #subProjectDetail .subText .subWrap p {
+  font-family: "Pretendard-Light";
   width: 80%;
   line-height: 25px;
-  font-size: 16px;
-  font-weight: 600;
+}
+#subProjectDetail .subText .subWrap p strong {
+  transition: 0.3s;
+}
+#subProjectDetail .subText .subWrap p:hover strong {
+  background: #fff000;
 }
 @media (max-width: 768px) {
   #subProjectDetail .subText .subWrap {
@@ -432,4 +447,124 @@ img {
 #subProjectDetail .subText:nth-child(4) {
   width: 100%;
   background: #f7f7f7;
+}
+
+.pro1subWrap {
+  padding: 100px 0;
+  text-align: center;
+}
+.pro1subWrap h3 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+}
+.pro1subWrap .reportDown {
+  transition: 0.2s;
+}
+.pro1subWrap .reportDown:hover {
+  background: #fff000;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .pro1subWrap .reportDown {
+    font-size: 12px;
+  }
+}
+.pro1subWrap #wireframeWrap {
+  margin: 0 auto;
+  max-width: 1000px;
+  overflow: hidden;
+}
+.pro1subWrap #wireframeWrap ul {
+  display: flex;
+}
+.pro1subWrap #wireframeWrap ul li {
+  width: 100%;
+  height: 100%;
+}
+.pro1subWrap #wireframeWrap ul li img {
+  width: 100%;
+}
+.pro1subWrap #reportWrap {
+  margin: 20px auto 0 auto;
+  max-width: 1000px;
+  overflow: hidden;
+}
+.pro1subWrap #reportWrap ul {
+  display: flex;
+}
+.pro1subWrap #reportWrap ul li {
+  width: 100%;
+  height: 100%;
+}
+.pro1subWrap #reportWrap ul li img {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .pro1subWrap {
+    padding: 50px 0;
+  }
+  .pro1subWrap h3 {
+    font-size: 16px;
+  }
+}
+
+#subProjectDetail .prototype {
+  background: #F2F3F5;
+  height: 300px;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#subProjectDetail .prototype .subWrap {
+  text-align: center;
+}
+#subProjectDetail .prototype .subWrap h3 {
+  width: 100%;
+  font-size: 30px;
+  font-weight: 900;
+}
+#subProjectDetail .prototype .subWrap a {
+  display: block;
+  padding-top: 20px;
+}
+#subProjectDetail .prototype .subWrap a span {
+  transition: 0.2s;
+}
+#subProjectDetail .prototype .subWrap a span:hover {
+  background: #fff000;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  #subProjectDetail .prototype {
+    height: 200px;
+  }
+  #subProjectDetail .prototype .subWrap h3 {
+    font-size: 16px;
+    width: 100%;
+  }
+  #subProjectDetail .prototype .subWrap a span {
+    line-height: 18px;
+    font-size: 12px;
+  }
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #222222;
+}
+@media (max-width: 1400px) {
+  .swiper-button-next, .swiper-button-prev {
+    display: none;
+  }
+}
+
+.swiper-pagination {
+  --swiper-theme-color: #222222;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 5%;
 }/*# sourceMappingURL=sub.css.map */
