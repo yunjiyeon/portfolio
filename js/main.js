@@ -239,8 +239,10 @@ $(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
       $(".subNav, .subHeaderContainer h1").css("opacity", "0");
+      $(".back").css("top","20px");
     } else {
       $(".subNav, .subHeaderContainer h1").css("opacity", "1");
+      $(".back").css("top","50px");
     }
   });
 });

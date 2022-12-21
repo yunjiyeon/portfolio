@@ -207,14 +207,6 @@ header .Container h1 {
 }
 
 /*** main ***/
-.moveText::after {
-  content: "";
-  margin-left: 0.4rem;
-  border-right: 2px solid #777;
-  -webkit-animation: cursor 0.9s infinite steps(2);
-          animation: cursor 0.9s infinite steps(2);
-}
-
 @-webkit-keyframes cursor {
   from {
     border-right: 2px solid #222;
@@ -223,7 +215,6 @@ header .Container h1 {
     border-right: 2px solid #777;
   }
 }
-
 @keyframes cursor {
   from {
     border-right: 2px solid #222;

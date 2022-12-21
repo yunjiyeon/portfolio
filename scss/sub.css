@@ -750,4 +750,16 @@ img {
   .subContainer .projectTitle .urbanTitle {
     font-size: 20px;
   }
+}
+
+/* gogoTalk */
+.talkBox {
+  display: flex;
+}
+
+.tktBox {
+  display: flex;
+}
+.tktBox span {
+  width: 30%;
 }/*# sourceMappingURL=sub.css.map */

@@ -146,10 +146,10 @@
 .back {
   display: block;
   position: fixed;
-  top: 50px;
   left: 40px;
   padding: 10px 30px 10px 0;
   z-index: 150;
+  transition: .3s;
   font: {
     size: 13px;
     weight: 500;
