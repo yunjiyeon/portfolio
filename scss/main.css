@@ -1137,7 +1137,7 @@ main {
 }
 #project nav .btns .on a {
   color: #000000;
-  background: #fff000;
+  background: linear-gradient(135deg, #fff892 0%, #fff000 100%);
 }
 @media (max-width: 994px) {
   #project nav {
@@ -1194,7 +1194,7 @@ main {
 #project .projectItem article:nth-child(2) .imgBox {
   padding: 30px;
 }
-#project .projectItem article:nth-child(9) .imgBox {
+#project .projectItem article:nth-child(11) .imgBox {
   padding: 30px;
 }
 @media (max-width: 1400px) {

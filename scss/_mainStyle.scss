@@ -738,10 +738,7 @@ main {
   transition: 0.3s ease-in-out;
   z-index: 2;
 }
-
-
 /*tab buttons hover*/
-
 .tablinks:hover::before {
   height: 100%;
   z-index: 2;
@@ -752,9 +749,7 @@ main {
   }
 }
 
-
 /* Tab active */
-
 .tablinks.active {
   background-color: white;
   z-index: 0;
@@ -960,7 +955,7 @@ main {
       .on {
         a {
           color: #000000;
-          background: $main-color;
+          background: linear-gradient(135deg, #fff892 0%, #fff000 100%);
         }
       }
     }
@@ -1023,7 +1018,7 @@ main {
       &:nth-child(2) .imgBox{
         padding: 30px;
       }
-      &:nth-child(9) .imgBox{
+      &:nth-child(11) .imgBox{
         padding: 30px;
       }
     }
