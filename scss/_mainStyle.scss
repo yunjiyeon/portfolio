@@ -43,8 +43,7 @@ header {
   margin: 12.5px;
   z-index: 200;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
-
-  cursor: pointer;
+  cursor: url(../img/pointer2.png) 2 2,auto;
   span {
     display: block;
     background: #000000;
@@ -142,6 +141,21 @@ header {
 }
 
 /*** main ***/
+
+.moveText::after {
+  content: '';
+  margin-left: .4rem;
+  border-right: 2px solid #777;
+  animation: cursor .9s infinite steps(2);
+}
+
+@keyframes cursor {
+  from { border-right: 2px solid #222; }
+  to { border-right: 2px solid #777; }
+}
+
+
+
 main {
   width: 100%;
   height: 100%;
@@ -225,6 +239,8 @@ main {
         overflow-wrap: break-word;
         span{
           transition: .3s;
+          font-size: 18px;
+          font-weight: 700;
         }
       }
       .subText {
@@ -694,7 +710,7 @@ main {
   background-image: linear-gradient(90deg, transparent 70%, rgba(255, 255, 255, 0.2) 100%);
   border: none;
   outline: none;
-  cursor: pointer;
+  cursor: url(../img/pointer2.png) 2 2,auto;
   width: 25%; /*change depending on the number of tabs*/
   height: 80px;
   position: relative;
@@ -978,7 +994,7 @@ main {
     article {
       width: calc(100% / 3);
       padding: 14px;
-      cursor: pointer;
+      cursor: url(../img/pointer2.png) 2 2,auto;
       .imgBox {
         position: relative;
         width: 100%;
@@ -1205,7 +1221,7 @@ main {
           padding: 18px;
           border-radius: 50px;
           box-shadow: 0 0 20px rgba(0,0,0,0.2);
-          cursor: pointer;
+          cursor: url(../img/pointer2.png) 2 2,auto;
           img {
             width: 100%;
           }
@@ -1388,20 +1404,18 @@ main {
         weight: 900;
       }
     }
-    span{
-      width: 50px;
-      height: 50px;
-      border-radius: 50px;
-      padding: 10px;
-      margin-left: 2px;
-      cursor: pointer;
-      transition: .3s;
-      img {
-        width: 100%;
-      }
-      &:hover {
-        background: $main-color;
-      }
+    a{
+    display: inline-block;
+    border-radius: 50px;
+    padding: 10px;
+    margin-left: 2px;
+    transition: .3s;
+    img {
+      width: 25px;
+    }
+    &:hover {
+      background: $main-color;
+    }
     }
   }
   @media (max-width: 768px) {
@@ -1420,7 +1434,7 @@ main {
       p {
         font-size: 12px;
       }
-      span {
+      a {
         width: 40px;
         height: 40px;
         padding: 5px;
@@ -1440,9 +1454,9 @@ main {
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background-color: $main-color;
+  background-color: #ffffff;
   border: none;
-  cursor: pointer;
+  cursor: url(../img/pointer2.png) 2 2,auto;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
   transition: 0.4s;
   opacity: 0;

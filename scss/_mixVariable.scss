@@ -35,9 +35,14 @@ $opacityBg: rgba(238, 225, 216, 0.45);
 }
 
 
-body{
-    cursor: url(../img/mouse.png) 2 2, auto;
+html, body{
+    cursor: url(../img/pointer.png) 2 2, auto;
 }
+
+a, select {
+  cursor: url(../img/pointer2.png) 2 2,auto;
+}
+
 * {
   font-family: "Archivo",'Pretendard-bold',inherit sans-serif;
 }

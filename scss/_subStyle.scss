@@ -1,6 +1,13 @@
 @charset "UTF-8";
 
 .subHeaderContainer{
+  // position: fixed;
+  // left: 0;
+  // right: 0;
+  // top: 0;
+  // background: #ffffff;
+  // height: 80px;
+  // z-index: 100;
   h1{
     position: fixed;
     top: 20px;
@@ -37,7 +44,7 @@
   transition: .25s;
   margin: 12.5px;
   z-index: 200;
-  cursor: pointer;
+  cursor: url(../img/pointer2.png) 2 2,auto;
   span {
     display: block;
     background: #000000;
@@ -179,7 +186,6 @@
 .subContainer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   .projectTitle {
     width: 30%;
     h1 {
@@ -213,7 +219,7 @@
         border: none;
         border-radius: 50px;
         background: linear-gradient(135deg, #fff892 0%, $main-color 100%);
-        cursor: pointer;
+        cursor: url(../img/pointer2.png) 2 2,auto;
         box-shadow: 0 0 20px rgba(0,0,0,.2);
         font-weight: 600;
         font-size: 15px;

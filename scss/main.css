@@ -23,8 +23,12 @@
   font-weight: 400;
   font-style: normal;
 }
-body {
-  cursor: url(../img/mouse.png) 2 2, auto;
+html, body {
+  cursor: url(../img/pointer.png) 2 2, auto;
+}
+
+a, select {
+  cursor: url(../img/pointer2.png) 2 2, auto;
 }
 
 * {
@@ -99,7 +103,7 @@ header .Container h1 {
   margin: 12.5px;
   z-index: 200;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
+  cursor: url(../img/pointer2.png) 2 2, auto;
 }
 .navBtn span {
   display: block;
@@ -203,6 +207,31 @@ header .Container h1 {
 }
 
 /*** main ***/
+.moveText::after {
+  content: "";
+  margin-left: 0.4rem;
+  border-right: 2px solid #777;
+  -webkit-animation: cursor 0.9s infinite steps(2);
+          animation: cursor 0.9s infinite steps(2);
+}
+
+@-webkit-keyframes cursor {
+  from {
+    border-right: 2px solid #222;
+  }
+  to {
+    border-right: 2px solid #777;
+  }
+}
+
+@keyframes cursor {
+  from {
+    border-right: 2px solid #222;
+  }
+  to {
+    border-right: 2px solid #777;
+  }
+}
 main {
   width: 100%;
   height: 100%;
@@ -296,6 +325,8 @@ main {
 }
 #title .titleContainer .titleWrap p span {
   transition: 0.3s;
+  font-size: 18px;
+  font-weight: 700;
 }
 #title .titleContainer .titleWrap .subText {
   font-size: 18px;
@@ -821,7 +852,7 @@ main {
   background-image: linear-gradient(90deg, transparent 70%, rgba(255, 255, 255, 0.2) 100%);
   border: none;
   outline: none;
-  cursor: pointer;
+  cursor: url(../img/pointer2.png) 2 2, auto;
   width: 25%; /*change depending on the number of tabs*/
   height: 80px;
   position: relative;
@@ -1132,7 +1163,7 @@ main {
 #project .projectItem article {
   width: 33.3333333333%;
   padding: 14px;
-  cursor: pointer;
+  cursor: url(../img/pointer2.png) 2 2, auto;
 }
 #project .projectItem article .imgBox {
   position: relative;
@@ -1363,7 +1394,7 @@ main {
     padding: 18px;
     border-radius: 50px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
+    cursor: url(../img/pointer2.png) 2 2, auto;
   }
   #contact .contactWrap .mContactBox a img {
     width: 100%;
@@ -1543,19 +1574,17 @@ main {
   font-size: 15px;
   font-weight: 900;
 }
-#footer .sns span {
-  width: 50px;
-  height: 50px;
+#footer .sns a {
+  display: inline-block;
   border-radius: 50px;
   padding: 10px;
   margin-left: 2px;
-  cursor: pointer;
   transition: 0.3s;
 }
-#footer .sns span img {
-  width: 100%;
+#footer .sns a img {
+  width: 25px;
 }
-#footer .sns span:hover {
+#footer .sns a:hover {
   background: #fff000;
 }
 @media (max-width: 768px) {
@@ -1571,7 +1600,7 @@ main {
   #footer .sns p {
     font-size: 12px;
   }
-  #footer .sns span {
+  #footer .sns a {
     width: 40px;
     height: 40px;
     padding: 5px;
@@ -1586,9 +1615,9 @@ main {
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background-color: #fff000;
+  background-color: #ffffff;
   border: none;
-  cursor: pointer;
+  cursor: url(../img/pointer2.png) 2 2, auto;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
   transition: 0.4s;
   opacity: 0;

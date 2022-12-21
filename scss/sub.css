@@ -23,8 +23,12 @@
   font-weight: 400;
   font-style: normal;
 }
-body {
-  cursor: url(../img/mouse.png) 2 2, auto;
+html, body {
+  cursor: url(../img/pointer.png) 2 2, auto;
+}
+
+a, select {
+  cursor: url(../img/pointer2.png) 2 2, auto;
 }
 
 * {
@@ -95,7 +99,7 @@ img {
   transition: 0.25s;
   margin: 12.5px;
   z-index: 200;
-  cursor: pointer;
+  cursor: url(../img/pointer2.png) 2 2, auto;
 }
 .subNavBtn span {
   display: block;
@@ -254,7 +258,6 @@ img {
 .subContainer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .subContainer .projectTitle {
   width: 30%;
@@ -289,7 +292,7 @@ img {
   border: none;
   border-radius: 50px;
   background: linear-gradient(135deg, #fff892 0%, #fff000 100%);
-  cursor: pointer;
+  cursor: url(../img/pointer2.png) 2 2, auto;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   font-weight: 600;
   font-size: 15px;
@@ -732,4 +735,19 @@ img {
 }
 .davichframe ul li:nth-child(3) {
   margin-right: 0;
+}
+
+/* urban */
+.subContainer .projectTitle .urbanTitle {
+  font-size: 40px;
+}
+@media (max-width: 994px) {
+  .subContainer .projectTitle .urbanTitle {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .subContainer .projectTitle .urbanTitle {
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=sub.css.map */

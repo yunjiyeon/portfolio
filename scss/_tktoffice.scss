@@ -274,3 +274,14 @@
     }
   }
 }
+
+/* urban */
+.subContainer .projectTitle .urbanTitle {
+  font-size: 40px;
+  @media (max-width: 994px) {
+    font-size: 30px;
+  }
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+}
