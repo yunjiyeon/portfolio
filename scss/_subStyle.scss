@@ -146,6 +146,7 @@
 .back {
   display: block;
   position: fixed;
+  top: 50px;
   left: 40px;
   padding: 10px 30px 10px 0;
   z-index: 150;
@@ -163,7 +164,7 @@
 
 /* Inner */
 .subTitleInner{
-  margin: 250px 15%;
+  margin: 220px 15%;
   position: relative;
   @media (max-width: 994px) {
     margin: 200px 10%;
@@ -345,6 +346,14 @@
         }
         &:hover strong {
           background: $main-color;
+        }
+      }
+      .workList {
+        width: 80%;
+        p {
+          span {
+            margin-right: 10px;
+          }
         }
       }
       @media (max-width: 768px) {

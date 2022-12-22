@@ -1,32 +1,25 @@
 const $moveText = document.querySelector(".moveText");
-
 // 글자 모음
 const letters = [
 "#도전하는",
 "#유연한", 
 "#소통하는"
 ];
-
 // 글자 입력 속도
 const speed = 100;
 let i = 0;
-
 // 타이핑 효과
 const typing = async () => {  
 const letter = letters[i].split("");
-
 while (letter.length) {
 await wait(speed);
 $moveText.innerHTML += letter.shift(); 
 }
-
 // 잠시 대기
 await wait(800);
-
 // 지우는 효과
 remove();
 }
-
 // 글자 지우는 효과
 const remove = async () => {
 const letter = letters[i].split("");
@@ -37,17 +30,14 @@ await wait(speed);
 letter.pop();
 $moveText.innerHTML = letter.join(""); 
 }
-
 // 다음 순서의 글자로 지정, 타이핑 함수 다시 실행
 i = !letters[i+1] ? 0 : i + 1;
 typing();
 }
-
 // 딜레이 기능 ( 마이크로초 )
 function wait(ms) {
 return new Promise(res => setTimeout(res, ms))
 }
-
 // 초기 실행
 setTimeout(typing, 1500);
 
@@ -189,16 +179,22 @@ const rSlide = new Swiper("#reportWrap", reportSlide);
 /* portfolio pc report slide */
 
 let portPcSlide = {
-    direction: 'vertical',
-    slidesPerView: 1,
-    spaceBetween: 0,
-    mousewheel: true,
-    grabCursor: true,
-    loop: true,
-    autoplay: {
-      delay: 3500,
-      disableOnInteraction: false,
-    },
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  autoplay : {
+    //시간 1000 이 1초
+    delay : 3500,
+    disableOnInteraction : false,
+},
+  pagination: {
+    el: ".swiper-pagination"
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  mousewheel : true,
 };
 const pSlide = new Swiper("#portPcWrap", portPcSlide);
 
@@ -206,16 +202,17 @@ const pSlide = new Swiper("#portPcWrap", portPcSlide);
 /* portfolio moblie report slide */
 
 let portMSlide = {
-  direction: 'vertical',
-  slidesPerView: 1,
-  spaceBetween: 0,
-  mousewheel: true,
-  grabCursor: true,
-  loop: true,
-  autoplay: {
-    delay: 3500,
-    disableOnInteraction: false,
+  slidesPerView: 3,
+  spaceBetween: 10,
+  loop: false,
+  pagination: {
+    el: ".swiper-pagination"
   },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  mousewheel : true,
 };
 const pMSlide = new Swiper("#portMWrap", portMSlide);
 
@@ -239,7 +236,7 @@ $(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
       $(".subNav, .subHeaderContainer h1").css("opacity", "0");
-      $(".back").css("top","20px");
+      $(".back").css("top","10px");
     } else {
       $(".subNav, .subHeaderContainer h1").css("opacity", "1");
       $(".back").css("top","50px");
