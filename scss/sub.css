@@ -1097,4 +1097,24 @@ img {
   top: 0;
 }
 
-/* fila *//*# sourceMappingURL=sub.css.map */
+/* preview */
+.subText .pro1subWrap .preview {
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+}
+.subText .pro1subWrap .preview::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  border: 7px solid #fff000;
+  z-index: -10;
+}
+@media (max-width: 768px) {
+  .subText .pro1subWrap .preview::after {
+    width: 80%;
+    border: 5px solid #fff000;
+  }
+}/*# sourceMappingURL=sub.css.map */

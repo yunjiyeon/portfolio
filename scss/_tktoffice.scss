@@ -581,5 +581,26 @@
   top: 0;
 }
 
-
-/* fila */
+/* preview */
+.subText {
+  .pro1subWrap {
+    .preview {
+      display: inline-block;
+      position: relative;
+      z-index: 10;
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        width: 90%;
+        border: 7px solid $main-color;
+        z-index: -10;
+        @media (max-width: 768px) {
+          width: 80%;
+          border: 5px solid $main-color;
+        }
+      }
+    }
+  }
+}
