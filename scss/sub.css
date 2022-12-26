@@ -11,18 +11,6 @@
   font-weight: 400;
   font-style: normal;
 }
-@font-face {
-  font-family: "Pretendard-bold";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-bold.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Pretendard-black";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-black.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
 html, body {
   cursor: url(../img/pointer.png) 2 2, auto;
 }
@@ -100,6 +88,7 @@ img {
   margin: 12.5px;
   z-index: 200;
   cursor: url(../img/pointer2.png) 2 2, auto;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
 }
 .subNavBtn span {
   display: block;
@@ -227,7 +216,7 @@ img {
 
 /* Inner */
 .subTitleInner {
-  margin: 220px 15%;
+  margin: 200px 15%;
   position: relative;
 }
 @media (max-width: 994px) {
@@ -322,7 +311,6 @@ img {
   letter-spacing: 1px;
 }
 .subContainer .projectDetail strong {
-  font-family: "Pretendard-bold";
   font-size: 18px;
 }
 @media (max-width: 994px) {
@@ -336,7 +324,6 @@ img {
   }
 }
 .subContainer .projectDetail p {
-  font-family: "Pretendard-Regular";
   line-height: 25px;
 }
 @media (max-width: 994px) {
@@ -358,7 +345,6 @@ img {
   }
 }
 .subContainer .projectDetail .projectSkills ul {
-  font-family: "Pretendard-Regular";
   width: 80%;
   display: flex;
   justify-content: space-between;
@@ -397,7 +383,6 @@ img {
   font-weight: 800;
 }
 .subContainer .projectDetail .projectSkills ul li span {
-  font-family: "Pretendard-Regular";
   display: block;
 }
 
@@ -410,7 +395,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 300px;
+  padding: 7% 0;
 }
 #subProjectDetail .subText .subWrap h3 {
   width: 200px;
@@ -421,25 +406,60 @@ img {
   width: 80%;
 }
 #subProjectDetail .subText .subWrap p {
-  font-family: "Pretendard-Light";
   width: 80%;
   line-height: 25px;
 }
 #subProjectDetail .subText .subWrap p strong {
-  transition: 0.3s;
+  background: linear-gradient(to right, transparent 50%, #fff000 50%) 0px 0px/200%;
+  text-underline-offset: 3.5px;
+  transition: all 0.25s ease 0s;
 }
 #subProjectDetail .subText .subWrap p:hover strong {
-  background: #fff000;
+  background-position: -100% 0;
 }
-#subProjectDetail .subText .subWrap .workList {
+#subProjectDetail .subText .subWrap .workList, #subProjectDetail .subText .subWrap .installList {
   width: 80%;
 }
-#subProjectDetail .subText .subWrap .workList p span {
+#subProjectDetail .subText .subWrap .workList p span, #subProjectDetail .subText .subWrap .installList p span {
   margin-right: 10px;
 }
 @media (max-width: 768px) {
+  #subProjectDetail .subText .subWrap .workList p, #subProjectDetail .subText .subWrap .installList p {
+    width: 100%;
+  }
+}
+#subProjectDetail .subText .subWrap .installList {
+  display: flex;
+  flex-wrap: wrap;
+  height: 33.3333333333%;
+}
+@media (max-width: 994px) {
+  #subProjectDetail .subText .subWrap .installList {
+    height: 50%;
+  }
+}
+@media (max-width: 768px) {
+  #subProjectDetail .subText .subWrap .installList {
+    flex-direction: column;
+  }
+}
+#subProjectDetail .subText .subWrap .installList p {
+  width: 30%;
+}
+@media (max-width: 994px) {
+  #subProjectDetail .subText .subWrap .installList p {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  #subProjectDetail .subText .subWrap .installList p {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
   #subProjectDetail .subText .subWrap {
-    height: 200px;
+    height: 100%;
+    padding: 5% 0;
   }
   #subProjectDetail .subText .subWrap h3 {
     font-size: 16px;
@@ -450,11 +470,7 @@ img {
     font-size: 12px;
   }
 }
-#subProjectDetail .subText:nth-child(2) {
-  width: 100%;
-  background: #f7f7f7;
-}
-#subProjectDetail .subText:nth-child(4) {
+#subProjectDetail .subText:nth-child(even) {
   width: 100%;
   background: #f7f7f7;
 }
@@ -469,15 +485,21 @@ img {
   font-size: 30px;
   font-weight: 900;
 }
-.pro1subWrap .reportDown {
-  transition: 0.2s;
+.pro1subWrap .fileDown {
+  position: relative;
+  z-index: 10;
 }
-.pro1subWrap .reportDown:hover {
-  background: #fff000;
-  font-weight: 700;
+.pro1subWrap .fileDown::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  border: 5px solid #fff000;
+  z-index: -10;
 }
 @media (max-width: 768px) {
-  .pro1subWrap .reportDown {
+  .pro1subWrap .fileDown {
     font-size: 12px;
   }
 }
@@ -491,16 +513,11 @@ img {
 }
 
 #subProjectDetail .prototype {
-  background: #F2F3F5;
-  height: 300px;
   line-height: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 #subProjectDetail .prototype .subWrap {
   text-align: center;
+  display: block;
 }
 #subProjectDetail .prototype .subWrap h3 {
   width: 100%;
@@ -509,19 +526,21 @@ img {
 }
 #subProjectDetail .prototype .subWrap a {
   display: block;
-  padding-top: 20px;
 }
 #subProjectDetail .prototype .subWrap a span {
-  transition: 0.2s;
+  position: relative;
+  z-index: 10;
 }
-#subProjectDetail .prototype .subWrap a span:hover {
-  background: #fff000;
-  font-weight: 700;
+#subProjectDetail .prototype .subWrap a span::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  border: 5px solid #fff000;
+  z-index: -10;
 }
 @media (max-width: 768px) {
-  #subProjectDetail .prototype {
-    height: 200px;
-  }
   #subProjectDetail .prototype .subWrap h3 {
     font-size: 16px;
     width: 100%;
@@ -636,6 +655,261 @@ img {
 }
 
 /* davich */
+.imobile, .ipad {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+@media (max-width: 768px) {
+  .imobile, .ipad {
+    padding: 0 10%;
+  }
+}
+.imobile .imobileWrap, .ipad .imobileWrap {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .imobile .imobileWrap, .ipad .imobileWrap {
+    flex-direction: column-reverse;
+  }
+}
+.imobile .imobileWrap .screenWrap, .ipad .imobileWrap .screenWrap {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .imobile .imobileWrap .screenWrap, .ipad .imobileWrap .screenWrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+.imobile .imobileWrap .screenWrap .screen, .ipad .imobileWrap .screenWrap .screen {
+  background: #222;
+  border-radius: 40px;
+  /* for aspect ratio */
+  max-width: 300px;
+  height: 600px;
+  position: relative;
+  transition: 0.3s;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 768px) {
+  .imobile .imobileWrap .screenWrap .screen, .ipad .imobileWrap .screenWrap .screen {
+    width: 170px;
+    height: 330px;
+    border-radius: 25px;
+  }
+}
+.imobile .imobileWrap .screenWrap .screen .viewport, .ipad .imobileWrap .screenWrap .screen .viewport {
+  border-radius: 30px;
+}
+@media (max-width: 768px) {
+  .imobile .imobileWrap .screenWrap .screen .viewport, .ipad .imobileWrap .screenWrap .screen .viewport {
+    border-radius: 20px;
+  }
+}
+.imobile .imobileWrap .screenWrap .screen .camera, .ipad .imobileWrap .screenWrap .screen .camera {
+  width: 80px;
+  height: 20px;
+  background: #222;
+  border-radius: 50px;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%);
+  transition: 0.3s;
+}
+@media (max-width: 768px) {
+  .imobile .imobileWrap .screenWrap .screen .camera, .ipad .imobileWrap .screenWrap .screen .camera {
+    top: 2%;
+    width: 53px;
+    height: 13px;
+  }
+}
+.imobile .imobileWrap .imobileText, .ipad .imobileWrap .imobileText {
+  padding: 50px;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .imobile .imobileWrap .imobileText, .ipad .imobileWrap .imobileText {
+    padding: 5%;
+  }
+}
+.imobile .imobileWrap .imobileText .screenTitle, .ipad .imobileWrap .imobileText .screenTitle {
+  position: relative;
+  padding-left: 130px;
+  text-align: start;
+  font-weight: 700;
+  z-index: 10;
+}
+@media (max-width: 768px) {
+  .imobile .imobileWrap .imobileText .screenTitle, .ipad .imobileWrap .imobileText .screenTitle {
+    font-size: 15px;
+    text-align: center;
+    padding-left: 0;
+  }
+}
+.imobile .imobileWrap .imobileText .screenTitle::before, .ipad .imobileWrap .imobileText .screenTitle::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  top: 15px;
+  left: 0;
+  background-color: #222;
+}
+@media (max-width: 768px) {
+  .imobile .imobileWrap .imobileText .screenTitle::before, .ipad .imobileWrap .imobileText .screenTitle::before {
+    display: none;
+  }
+}
+.imobile .imobileWrap .imobileText .screenTitle::after, .ipad .imobileWrap .imobileText .screenTitle::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 8px;
+  top: 14px;
+  left: 130px;
+  background-color: #fff000;
+  z-index: -10;
+}
+@media (max-width: 768px) {
+  .imobile .imobileWrap .imobileText .screenTitle::after, .ipad .imobileWrap .imobileText .screenTitle::after {
+    left: 50%;
+    transform: translate(-50%);
+    top: 9px;
+  }
+}
+.imobile .imobileWrap .imobileText p, .ipad .imobileWrap .imobileText p {
+  text-align: start;
+  margin-top: 50px;
+  line-height: 30px;
+}
+@media (max-width: 768px) {
+  .imobile .imobileWrap .imobileText p, .ipad .imobileWrap .imobileText p {
+    font-size: 13px;
+    margin-top: 20px;
+    line-height: 20px;
+  }
+}
+
+.ipadWrap {
+  display: flex;
+  flex-direction: row-reverse;
+}
+@media (max-width: 768px) {
+  .ipadWrap {
+    flex-direction: column-reverse;
+  }
+}
+.ipadWrap .screenWrap {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .ipadWrap .screenWrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+.ipadWrap .screenWrap .screen {
+  background: #222;
+  border-radius: 30px;
+  /* for aspect ratio */
+  width: 450px;
+  height: 600px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 994px) {
+  .ipadWrap .screenWrap .screen {
+    width: 330px;
+    height: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .ipadWrap .screenWrap .screen {
+    width: 250px;
+    height: 350px;
+    border-radius: 20px;
+  }
+}
+.ipadWrap .screenWrap .screen .viewport {
+  border-radius: 20px;
+}
+@media (max-width: 768px) {
+  .ipadWrap .screenWrap .screen .viewport {
+    border-radius: 15px;
+  }
+}
+.ipadWrap .ipadText {
+  padding: 50px;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .ipadWrap .ipadText {
+    padding: 5%;
+  }
+}
+.ipadWrap .ipadText .screenTitle {
+  font-weight: 700;
+  position: relative;
+  text-align: start;
+  z-index: 10;
+}
+@media (max-width: 768px) {
+  .ipadWrap .ipadText .screenTitle {
+    font-size: 15px;
+    text-align: center;
+    padding-left: 0;
+  }
+}
+.ipadWrap .ipadText .screenTitle::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  top: 15px;
+  left: 80px;
+  background-color: #222;
+}
+@media (max-width: 768px) {
+  .ipadWrap .ipadText .screenTitle::before {
+    display: none;
+  }
+}
+.ipadWrap .ipadText .screenTitle::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 8px;
+  top: 14px;
+  left: 0;
+  background-color: #fff000;
+  z-index: -10;
+}
+@media (max-width: 768px) {
+  .ipadWrap .ipadText .screenTitle::after {
+    left: 50%;
+    transform: translate(-50%);
+    top: 9px;
+  }
+}
+.ipadWrap .ipadText p {
+  text-align: start;
+  margin-top: 50px;
+  line-height: 30px;
+}
+@media (max-width: 768px) {
+  .ipadWrap .ipadText p {
+    font-size: 13px;
+    margin-top: 20px;
+    line-height: 20px;
+  }
+}
+
 .davichframe ul {
   display: flex;
   justify-content: center;
@@ -689,6 +963,28 @@ img {
     padding: 0 10%;
   }
 }
+.imac p {
+  font-weight: 700;
+  position: relative;
+  margin: 100px 0 30px 0;
+  z-index: 10;
+}
+@media (max-width: 768px) {
+  .imac p {
+    font-size: 15px;
+  }
+}
+.imac p::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 8px;
+  top: 8px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #fff000;
+  z-index: -10;
+}
 
 .screen {
   background: #000;
@@ -696,6 +992,7 @@ img {
   /* for aspect ratio */
   position: relative;
   width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 .screen:before {
@@ -746,6 +1043,7 @@ img {
   /* for aspect ratio */
   position: relative;
   width: 20%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
 .leg:before {
@@ -780,16 +1078,13 @@ img {
 
 /* Screenshot Hover Scroll Additions
 -------------------------------------------------------------- */
-.imac .viewport {
-  transition: background-position 10s;
+.imac .viewport, .imobile .viewport, .ipad .viewport {
+  transition: background-position 15s;
   background-position: 0 0;
   background-size: 100% auto;
   overflow: hidden;
-  cursor: pointer;
-}
-
-.imac:hover .viewport {
-  background-position: 0 100%;
+  -webkit-animation: wireframe 15s linear infinite;
+          animation: wireframe 15s linear infinite;
 }
 
 .imac .viewport:after {
@@ -800,4 +1095,6 @@ img {
   position: absolute;
   right: 0;
   top: 0;
-}/*# sourceMappingURL=sub.css.map */
+}
+
+/* fila *//*# sourceMappingURL=sub.css.map */

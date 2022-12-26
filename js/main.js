@@ -1,4 +1,4 @@
-const $moveText = document.querySelector(".moveText");
+const moveText = document.querySelector(".moveText");
 // 글자 모음
 const letters = [
 "#도전하는",
@@ -13,7 +13,7 @@ const typing = async () => {
 const letter = letters[i].split("");
 while (letter.length) {
 await wait(speed);
-$moveText.innerHTML += letter.shift(); 
+moveText.innerHTML += letter.shift(); 
 }
 // 잠시 대기
 await wait(800);
@@ -28,7 +28,7 @@ while (letter.length) {
 await wait(speed);
 
 letter.pop();
-$moveText.innerHTML = letter.join(""); 
+moveText.innerHTML = letter.join(""); 
 }
 // 다음 순서의 글자로 지정, 타이핑 함수 다시 실행
 i = !letters[i+1] ? 0 : i + 1;

@@ -9,11 +9,17 @@
       weight: 900;
     }
   }
-  .reportDown {
-    transition: .2s;
-    &:hover {
-      background: $main-color;
-      font-weight: 700;
+  .fileDown {
+    position: relative;
+    z-index: 10;
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: 90%;
+      border: 5px solid $main-color;
+      z-index: -10;
     }
     @media (max-width:768px) {
       font-size: 12px;
@@ -28,15 +34,10 @@
 }
 #subProjectDetail {
   .prototype {
-    background: $bg-color;
-    height: 300px;
     line-height: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     .subWrap {
       text-align: center;
+      display: block;
       h3{
         width: 100%;
         font-size: 30px;
@@ -44,18 +45,22 @@
       }
       a {
         display: block;
-        padding-top: 20px;
         span {
-          transition: .2s;
-          &:hover{
-            background: $main-color;
-            font-weight: 700;
+          position: relative;
+          z-index: 10;
+          &::after {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 0;
+            width: 90%;
+            border: 5px solid $main-color;
+            z-index: -10;
           }
         }
       }
     }
-    @media (max-width: 768px) {
-      height: 200px;
+    @media (max-width: 768px)   {
       .subWrap{
         h3 {
           font-size: 16px;
@@ -166,120 +171,8 @@
   overflow: hidden;
 }
 
-// .port {
-//   display: flex;
-//   justify-content: center;
-//   margin: 0 auto;
-// }
-
-
-// .portPc {
-//   padding: 100px 0;
-//   @media (max-width: 768px) {
-//     padding: 20px 0 50px 0;
-//   }
-//   p {
-//     text-align: start;
-//     margin: 20px 0 50px 0;
-//     font-weight: 600;
-//     @media (max-width: 768px) {
-//       font-size: 13px;
-//     }
-//   }
-//   .imac {
-//     position: relative;
-//     max-width: 1100px;
-//     margin: 0 auto;
-//     overflow: hidden;
-  
-//     img {
-//       width: 100%;
-//     }
-//   }
-// }
-
-// #portPcWrap {
-//   margin: 20px auto 0 auto;
-//   width: 68%;
-//   height: 550px;
-//   position: absolute;
-//   top: 0;
-//   z-index: -1;
-//   left: 50%;
-//   transform: translate(-50%);
-//   overflow: hidden;
-//   @media (max-width: 994px) {
-//     height: 470px;
-//   }
-//   @media (max-width: 774px) {
-//     margin: 5px auto 0 auto;
-//     height: 290px;
-//   }
-//   ul {
-//     display: flex;
-//     li {
-//       width: 100%;
-//       height: 100%;
-//       img {
-//         width: 100%;
-//       }
-//     }
-//   }
-// }
-
-// .portM {
-//   padding: 100px 0;
-//   @media (max-width: 768px) {
-//     padding: 20px 0 50px 0;
-//   }
-//   p {
-//     text-align: start;
-//     margin: 20px 0 50px 0;
-//     font-weight: 600;
-//     @media (max-width: 768px) {
-//       font-size: 13px;
-//     }
-//   }
-//   .iphone {
-//     position: relative;
-//     max-width: 200px;
-//     margin: 0 auto;
-//     left: 0;
-//     right: 0;
-//     overflow: hidden;
-//     img {
-//       width: 100%;
-//       overflow: hidden;
-//     }
-//   }
-// }
-
-// #portMWrap {
-//   margin: 10px auto 50px auto;
-//   width: 90%;
-//   height: 500px;
-//   position: absolute;
-//   top: 0;
-//   z-index: -1;
-//   left: 50%;
-//   transform: translate(-50%);
-//   overflow: hidden;
-//   @media (max-width: 774px) {
-//     margin: 5px auto 0 auto;
-//   }
-//   ul {
-//     display: flex;
-//     li {
-//       width: 100%;
-//       height: 100%;
-//       img {
-//         width: 100%;
-//       }
-//     }
-//   }
-// }
-
 /* tkt office */
+
 #subProjectDetail{
   .tktBox {
     display: flex;
@@ -290,6 +183,222 @@
 }
 
 /* davich */
+
+.imobile, .ipad {
+  margin: 0 auto;
+  max-width: 1000px;
+  @media (max-width:768px) {
+    padding: 0 10%;
+  }
+  .imobileWrap{
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+      flex-direction: column-reverse;
+    }
+    .screenWrap {
+      width: 100%;
+      @media (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      .screen {
+        background: #222;
+        border-radius: 40px;
+        /* for aspect ratio */
+        max-width: 300px;
+        height: 600px;
+        position: relative;
+        transition: .3s;
+        box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        @media (max-width: 768px) {
+          width: 170px;
+          height: 330px;
+          border-radius: 25px;
+        }
+
+        .viewport {
+          border-radius: 30px;
+          @media (max-width: 768px) {
+            border-radius: 20px;
+          }
+        }
+        .camera {
+          width: 80px;
+          height: 20px;
+          background: #222;
+          border-radius: 50px;
+          position: absolute;
+          top: 3%;
+          left: 50%;
+          transform: translate(-50%);
+          transition: .3s;
+          @media (max-width: 768px) {
+            top: 2%;
+            width: 53px;
+            height: 13px;
+          }
+        }
+      }
+    }
+    .imobileText {
+      padding: 50px;
+      width: 100%;
+      @media (max-width: 768px) {
+        padding: 5%;
+      }
+      .screenTitle{
+        position: relative;
+        padding-left: 130px;
+        text-align: start;
+        font-weight: 700;
+        z-index: 10;
+        @media (max-width: 768px) {
+          font-size: 15px;
+          text-align: center;
+          padding-left: 0;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          width: 100px;
+          height: 2px;
+          top: 15px;
+          left: 0;
+          background-color: #222;
+          @media (max-width: 768px) {
+            display: none;
+          }
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          width: 50px;
+          height: 8px;
+          top: 14px;
+          left: 130px;
+          background-color: $main-color;
+          z-index: -10;
+          @media (max-width: 768px) {
+            left: 50%;
+            transform: translate(-50%);
+            top: 9px;
+          }
+        }
+      }
+      p{
+        text-align: start;
+        margin-top: 50px;
+        line-height: 30px;
+        @media (max-width: 768px) {
+          font-size: 13px;
+          margin-top: 20px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+
+.ipadWrap {
+  display: flex;
+  flex-direction: row-reverse;
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
+  .screenWrap {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    @media (max-width: 768px) {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .screen {
+      background: #222;
+      border-radius: 30px;
+      /* for aspect ratio */
+      width: 450px;
+      height: 600px;
+      position: relative;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+
+      @media (max-width: 994px) {
+        width: 330px;
+        height: 400px;
+      }
+      @media (max-width: 768px) {
+        width: 250px;
+        height: 350px;
+        border-radius: 20px;
+      }
+
+      .viewport {
+        border-radius: 20px;
+        @media (max-width: 768px) {
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+  .ipadText {
+    padding: 50px;
+    width: 100%;
+    @media (max-width: 768px) {
+      padding: 5%;
+    }
+    .screenTitle{
+      font-weight: 700;
+      position: relative;
+      text-align: start;
+      z-index: 10;
+      @media (max-width: 768px) {
+        font-size: 15px;
+        text-align: center;
+        padding-left: 0;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 2px;
+        top: 15px;
+        left: 80px;
+        background-color: #222;
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 8px;
+        top: 14px;
+        left: 0;
+        background-color: $main-color;
+        z-index: -10;
+        @media (max-width: 768px) {
+          left: 50%;
+          transform: translate(-50%);
+          top: 9px;
+        }
+      }
+    }
+    p{
+      text-align: start;
+      margin-top: 50px;
+      line-height: 30px;
+      @media (max-width: 768px) {
+        font-size: 13px;
+        margin-top: 20px;
+        line-height: 20px;
+      }
+    }
+  }
+}
 
 .davichframe {
   ul {
@@ -331,15 +440,32 @@
   display: flex;
 }
 
-
 /*  smf */
-
-
 .imac {
   margin: 0 auto;
   max-width: 800px;
   @media (max-width:768px) {
     padding: 0 10%;
+  }
+  p{
+    font-weight: 700;
+    position: relative;
+    margin: 100px 0 30px 0 ;
+    z-index: 10;
+    @media (max-width: 768px) {
+      font-size: 15px;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 8px;
+      top: 8px;
+      left: 50%;
+      transform: translate(-50%);
+      background-color: $main-color;
+      z-index: -10;
+    }
   }
 }
 
@@ -349,6 +475,8 @@
   /* for aspect ratio */
   position: relative;
   width: 100%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+
 }
 
 .screen:before {
@@ -399,6 +527,7 @@
   /* for aspect ratio */
   position: relative;
   width: 20%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
 }
 
 .leg:before {
@@ -431,20 +560,15 @@
   box-shadow: 0 -10px 5px rgba(255, 255, 255, 0.1) inset, 0 -17px 6px rgba(0, 0, 0, 0.1) inset;
 }
 
-
 /* Screenshot Hover Scroll Additions
 -------------------------------------------------------------- */
 
-.imac .viewport {
-  transition: background-position 10s;
+.imac .viewport, .imobile .viewport, .ipad .viewport {
+  transition: background-position 15s;
   background-position: 0 0;
   background-size: 100% auto;
   overflow: hidden;
-  cursor: pointer;
-}
-
-.imac:hover .viewport {
-  background-position: 0 100%;
+  animation: wireframe 15s linear infinite;
 }
 
 .imac .viewport:after {
@@ -457,3 +581,5 @@
   top: 0;
 }
 
+
+/* fila */
