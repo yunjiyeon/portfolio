@@ -1114,7 +1114,6 @@ img {
 }
 @media (max-width: 768px) {
   .subText .pro1subWrap .preview::after {
-    width: 80%;
     border: 5px solid #fff000;
   }
 }/*# sourceMappingURL=sub.css.map */
