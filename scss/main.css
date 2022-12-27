@@ -1172,10 +1172,10 @@ main {
 #project .projectItem article:nth-child(2) .imgBox {
   padding: 30px;
 }
-#project .projectItem article:nth-child(8) .imgBox {
+#project .projectItem article:nth-child(9) .imgBox {
   padding: 30px;
 }
-#project .projectItem article:nth-child(10) .imgBox {
+#project .projectItem article:nth-child(11) .imgBox {
   padding: 30px;
 }
 @media (max-width: 1400px) {
