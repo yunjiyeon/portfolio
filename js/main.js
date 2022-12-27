@@ -114,25 +114,25 @@ let tabContent = document.querySelectorAll(".tabcontent");
 
 
 tabLinks.forEach(function(el) {
-   el.addEventListener("click", openTabs);
+  el.addEventListener("click", openTabs);
 });
 
 
 function openTabs(el) {
-   let btnTarget = el.currentTarget;
-   let skills = btnTarget.dataset.skills;
+  let btnTarget = el.currentTarget;
+  let skills = btnTarget.dataset.skills;
 
-   tabContent.forEach(function(el) {
+  tabContent.forEach(function(el) {
       el.classList.remove("active");
-   });
+  });
 
-   tabLinks.forEach(function(el) {
+  tabLinks.forEach(function(el) {
       el.classList.remove("active");
-   });
+  });
 
-   document.querySelector("#" + skills).classList.add("active");
+  document.querySelector("#" + skills).classList.add("active");
    
-   btnTarget.classList.add("active");
+  btnTarget.classList.add("active");
 }
 
 
