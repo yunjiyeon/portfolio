@@ -131,7 +131,6 @@ function openTabs(el) {
   });
 
   document.querySelector("#" + skills).classList.add("active");
-   
   btnTarget.classList.add("active");
 }
 
