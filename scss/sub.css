@@ -1116,4 +1116,10 @@ img {
   .subText .pro1subWrap .preview::after {
     border: 5px solid #fff000;
   }
+}
+
+/* vue todo */
+.todoBox {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=sub.css.map */

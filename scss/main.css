@@ -1172,6 +1172,9 @@ main {
 #project .projectItem article:nth-child(2) .imgBox {
   padding: 30px;
 }
+#project .projectItem article:nth-child(7) .imgBox {
+  padding: 30px;
+}
 #project .projectItem article:nth-child(9) .imgBox {
   padding: 30px;
 }
