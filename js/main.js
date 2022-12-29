@@ -41,10 +41,6 @@ return new Promise(res => setTimeout(res, ms))
 // 초기 실행
 setTimeout(typing, 1500);
 
-
-
-
-
 /* main menu */
 
 $('.navBtn').click(function(){
@@ -67,8 +63,6 @@ $('.subNavContainer').click(function(){
   $('.subNavBtn').removeClass('active');
   $(this).slideUp(400);
 });
-
-
 
 /* 이미지 플러그인 / 프로젝트 */
 
@@ -102,21 +96,13 @@ window.addEventListener("load", () => {
   }
 });
 
-
-
-
-
-
 // tabs
-
 let tabLinks = document.querySelectorAll(".tablinks");
 let tabContent = document.querySelectorAll(".tabcontent");
-
 
 tabLinks.forEach(function(el) {
   el.addEventListener("click", openTabs);
 });
-
 
 function openTabs(el) {
   let btnTarget = el.currentTarget;
@@ -133,7 +119,6 @@ function openTabs(el) {
   document.querySelector("#" + skills).classList.add("active");
   btnTarget.classList.add("active");
 }
-
 
 /* tktoffice wireframe slide */
 
@@ -215,11 +200,6 @@ let portMSlide = {
 };
 const pMSlide = new Swiper("#portMWrap", portMSlide);
 
-
-/* smf slide */
-
-
-
 /* topBtn */
 
 $(function () {
@@ -243,8 +223,6 @@ $(function () {
     }
   });
 });
-
-
 
 $(".topBtn").click(function () {
   $("html, body").animate(
