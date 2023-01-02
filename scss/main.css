@@ -1172,13 +1172,16 @@ main {
 #project .projectItem article:nth-child(2) .imgBox {
   padding: 30px;
 }
-#project .projectItem article:nth-child(7) .imgBox {
+#project .projectItem article:nth-child(4) .imgBox {
   padding: 30px;
 }
-#project .projectItem article:nth-child(9) .imgBox {
+#project .projectItem article:nth-child(8) .imgBox {
   padding: 30px;
 }
-#project .projectItem article:nth-child(11) .imgBox {
+#project .projectItem article:nth-child(10) .imgBox {
+  padding: 30px;
+}
+#project .projectItem article:nth-child(12) .imgBox {
   padding: 30px;
 }
 @media (max-width: 1400px) {
