@@ -409,6 +409,13 @@ img {
   background-color: #ffffff;
   transition: 0.3s;
 }
+#subProjectDetail .subText .subWrap .box1 p, #subProjectDetail .subText .subWrap .box2 p, #subProjectDetail .subText .subWrap .box3 p {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @media (max-width: 768px) {
   #subProjectDetail .subText .subWrap .box1, #subProjectDetail .subText .subWrap .box2, #subProjectDetail .subText .subWrap .box3 {
     width: 50px;
